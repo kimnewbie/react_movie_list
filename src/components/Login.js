@@ -6,8 +6,7 @@ export default function Login() {
     const onSubmitForm = (e) => {
         e.preventDefault(); // submit 하면 화면이 사라져서
         console.log(userName, password)
-    }
-
+    } 
     return (
         <div>
             <form onSubmit={onSubmitForm}>
