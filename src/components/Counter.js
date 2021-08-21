@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 
-export default function Count() {
+export default function Count(props) {
     const [count, setCount] = useState(0);
     
     const onClickCalculator = (e) => {
@@ -15,12 +15,15 @@ export default function Count() {
         console.log(count);
     }, [count]) // count가 변경될 때만 실행하게, [] 빈 것은 1번 실행
 
+    // props 받아오는 지 확인
+    const clickString = props.click || 'Click';
 
     return (
         <div>
             <h1>{count}</h1>
             <button value="increment" onClick={onClickCalculator}>+</button>
             <button value="decrement"  onClick={onClickCalculator}>-</button>
+            {clickString}
         </div>
     )
 }
