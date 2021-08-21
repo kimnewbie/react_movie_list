@@ -1,4 +1,5 @@
 import React from 'react'
+import Movies from './Movies';
 
 export default function Map() {
     const movies = [
@@ -16,10 +17,7 @@ export default function Map() {
 
     const renderMovies = movies.map((movie, index)=>{
         return(
-            <div className="movie" key={index}>
-                <div className="movie-title"> {movie.title} </div>
-                <div className="movie-year"> {movie.year} </div>
-            </div>
+            <Movies movie={movie} key={index}/>
         );
     })
         
