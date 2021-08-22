@@ -3,6 +3,7 @@ import Map from './components/Map';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import MovieForm from './components/MovieForm';
+import Users from './pages/Users';
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                         <h1>Home</h1>
                     </Route>
                     <Route path="/users">
-                        <h1>Users</h1>
+                        <Users />
                     </Route>
                 </Switch>
             </div>
