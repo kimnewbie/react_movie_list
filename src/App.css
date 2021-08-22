@@ -19,3 +19,8 @@
     font-size: 0.5rem;
     color: red;
 }
+
+.error {
+    font-size: 11px;
+    color: red;
+}
