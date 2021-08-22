@@ -12,6 +12,7 @@ export default function MovieForm({onSubmitAddMovie}) {
     const onSubmit = (e) => {
         e.preventDefault();
         onSubmitAddMovie({
+            id: Date.now(),
             title: movieTitle,
             year: movieYear
         }) 
