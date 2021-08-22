@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import UserList from './UserList';
+import UserList from '../components/UserList';
 import Spinner from '../components/Spinner';
 
 export default function Users() {

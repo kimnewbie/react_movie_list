@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Movies({movie, removeMovie}) { 
+export default function Movie({movie, removeMovie}) { 
     return (
         <div className="movie">
             <div className="movie-title">

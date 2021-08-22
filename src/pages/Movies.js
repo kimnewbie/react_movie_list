@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react'
-import MovieForm from './MovieForm';
-import Movies from './Movies';
+import React, {useState} from 'react'
+import MovieForm from '../components/MovieForm'
+import Movie from '../components/Movie'
 
-export default function Map() {
+export default function Movies() {
     const [movies, setMovies] = useState([]);
 
     const removeMovie = (id) => {
@@ -12,10 +12,9 @@ export default function Map() {
             })
         )
     }
-
     const renderMovies = movies.length ? movies.map((movie) => {
         return (
-        <Movies
+        <Movie
             movie={movie}  
             key={movie.id}
             removeMovie={removeMovie}
@@ -29,12 +28,13 @@ export default function Map() {
             movie
         ]) 
     }
- 
+
+
     return (
         <div>
-            <h1>Movie List</h1>
-            <MovieForm onSubmitAddMovie={onSubmitAddMovie} />
-            {renderMovies}
+            <h1>Movie list</h1>
+            <MovieForm onSubmitAddMovie={onSubmitAddMovie}/>
+            {renderMovies} 
         </div>
     )
 }
