@@ -32,6 +32,8 @@ export default function Map() {
                 year: movieYear
             }
         ])
+        setMovieTitle('');
+        setMovieYear('');
     }
 
     useEffect(() => {}, [])
