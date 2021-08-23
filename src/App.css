@@ -24,3 +24,11 @@
     font-size: 11px;
     color: red;
 }
+
+.addMovie {
+    margin: 10px 10px;
+} 
+
+.inputMovieInfo {
+    margin: 10px;
+}
