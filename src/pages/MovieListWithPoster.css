@@ -1,0 +1,360 @@
+/* 초기화 */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+}
+
+abbr[title] {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-size: 1em;
+    /* 2 */
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+table {
+    text-indent: 0;
+    /* 1 */
+    border-color: inherit;
+    /* 2 */
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+    -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+
+legend {
+    padding: 0;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type='search'] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+summary {
+    display: list-item;
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    background-image: none;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+}
+
+hr {
+    border-top-width: 1px;
+}
+
+img {
+    border-style: solid;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #9ca3af;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+[role="button"],
+button {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+    display: block;
+    vertical-align: middle;
+}
+/* 초기화 끝 */
+body {
+    background: #EAEEF4;
+}
+h3,
+h5,
+li,
+p,
+ul {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+li,
+ul {
+    list-style: none;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+}
+.loader_text {
+    font-size: 4rem;
+}
+.loader_text {
+    color: #000;
+}
+.movies_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10rem auto 0;
+    justify-content: space-between;
+}
+.movie_list {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-basis: 48%;
+    background: #fff;
+    box-shadow: 4px 4px 14px 0 #cacaca;
+}
+.movie_poster {
+    margin-right: 1rem;
+    position: relative;
+    left: 2rem;
+    top: -5rem;
+    box-shadow: 0 7px 14px 0 #909090;
+    align-self: flex-start;
+}
+.movie_poster img {
+    width: 150px;
+}
+.movie_contents {
+    margin: 2rem 2rem 2rem 4rem;
+}
+.movie_title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.movie_year {
+    font-size: 1.4rem;
+    display: inline-table;
+    margin-left: 1rem;
+    color: #b1b1b1;
+}
+.movie_genres {
+    display: table;
+}
+.movie_genres .genres_list {
+    display: table-cell; 
+    color: #b1b1b1;
+}
+.movie_genres .genres_list:not(:last-child) {
+    border-right-width: 0.5rem;
+    border-color: transparent;
+}
+.movie_summary {
+    font-size: unset;
+    color: #b1b1b1;
+    margin-top: 2rem;
+    line-height: 2rem;
+}

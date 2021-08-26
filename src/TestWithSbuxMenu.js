@@ -4,19 +4,19 @@ const Coffee = ({ fav, picture }) => {
     return (
         <div>
             <h2>{fav}는 맛있다.</h2>
-            <img src={picture} />
+            <img src={picture} alt={fav} />
         </div>
     );
 }
 
-export default function test() {
+export default function TestWithSbuxMenu() {
     return (
         <div>
             <Coffee fav="Latte" />
             <Coffee fav="Espresso" />
             <Coffee fav="GreenTea" />
             <br />
-            {CoffeeList.map(list => (<Coffee fav={list.name} picture={list.image} />))}
+            {CoffeeList.map((list, index) => (<Coffee fav={list.name} picture={list.image} key={index} />))}
         </div>
     )
 }
